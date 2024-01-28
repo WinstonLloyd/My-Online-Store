@@ -6,7 +6,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(187, 105, 105);
+    background-color: rgb(160, 109, 109);
 }
 .logo{
     font-size: 35px;
@@ -116,6 +116,71 @@ header a:hover::before{
     cursor: pointer;
     background-color: rgb(145, 46, 46);
     color: white;
+}
+
+/*Contact*/
+.cont img{
+    height: 35px;
+}
+textarea{
+    height: 100px;
+    width: 400px;
+}
+.cont-btn{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(145, 46, 46);
+    padding: 5px 10px;
+    font-weight: 900;
+    border: 1px solid rgb(145, 46, 46);
+    border-radius: 20px;
+}
+.cont-btn:hover{
+    cursor: pointer;
+    background-color: rgb(145, 46, 46);
+    color: white;
+}
+/*Footer*/
+footer nav p{
+    color: rgb(54, 48, 48);
+}
+footer nav ul{
+    list-style: none;
+    background-color: rgb(160, 109, 109);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+footer nav li{
+    display: inline-block;
+}
+footer nav a{
+    text-decoration: none;
+    color: rgb(54, 48, 48);
+    width: 100px;
+    font-size: 12px;
+    padding: 15px 15px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+footer nav a:before{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: yellow;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+footer nav a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 @media screen and (max-width: 1000px) {
     .items{
