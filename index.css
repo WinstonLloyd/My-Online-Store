@@ -124,7 +124,7 @@ header a:hover::before{
 }
 textarea{
     height: 100px;
-    width: 230px;
+    width: 300px;
 }
 .cont-btn{
     text-align: center;
